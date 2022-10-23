@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - UserTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>UserTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testClean.html">testClean</a> &gt; UserTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">15.814s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">verifyCRUDProjectToken()</td>
+<td class="success">15.814s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	GET
+Request URI:	https://todo.ly/api/authentication/token.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic dHZ0MjAyMkBnbWFpbC5jb206dDEyMzQ1Njc=
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=mhvdq54fbi43jx01bxm3uzwq; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Sat, 22 Oct 2022 01:48:27 GMT
+Content-Length: 125
+
+{
+    &quot;TokenString&quot;: &quot;7ecf1b6247fd4d6c804f5aab21134c28&quot;,
+    &quot;UserEmail&quot;: &quot;tvt2022@gmail.com&quot;,
+    &quot;ExpirationTime&quot;: &quot;/Date(1666421307793)/&quot;
+}
+Request method:	POST
+Request URI:	https://todo.ly/api/user.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Bearer 7ecf1b6247fd4d6c804f5aab21134c28
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;Email&quot;:&quot;mariocasas@gmail.com&quot;,&quot;FullName&quot;:&quot;Mario Casas&quot;,&quot;Password&quot;:&quot;1234567&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=d1mv0ppytkr2cxmofgqreho3; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Sat, 22 Oct 2022 01:48:30 GMT
+Content-Length: 296
+
+{
+    &quot;Id&quot;: 706442,
+    &quot;Email&quot;: &quot;mariocasas@gmail.com&quot;,
+    &quot;Password&quot;: null,
+    &quot;FullName&quot;: &quot;Mario Casas&quot;,
+    &quot;TimeZone&quot;: 0,
+    &quot;IsProUser&quot;: false,
+    &quot;DefaultProjectId&quot;: 4029993,
+    &quot;AddItemMoreExpanded&quot;: false,
+    &quot;EditDueDateMoreExpanded&quot;: false,
+    &quot;ListSortType&quot;: 0,
+    &quot;FirstDayOfWeek&quot;: 0,
+    &quot;NewTaskDueDate&quot;: -1,
+    &quot;TimeZoneId&quot;: &quot;Pacific Standard Time&quot;
+}
+Request method:	POST
+Request URI:	https://todo.ly/api/projects.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic dHZ0MjAyMkBnbWFpbC5jb206dDEyMzQ1Njc=
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;Email&quot;:&quot;mariocasas@gmail.com&quot;,&quot;Content&quot;:&quot;Cato2022&quot;,&quot;FullName&quot;:&quot;Mario Casas&quot;,&quot;Password&quot;:&quot;1234567&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=c1mpj0ut1z33uh4kv1qvr5b2; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Sat, 22 Oct 2022 01:48:32 GMT
+Content-Length: 397
+
+{
+    &quot;Id&quot;: 4029999,
+    &quot;Content&quot;: &quot;Cato2022&quot;,
+    &quot;ItemsCount&quot;: 0,
+    &quot;Icon&quot;: 0,
+    &quot;ItemType&quot;: 2,
+    &quot;ParentId&quot;: null,
+    &quot;Collapsed&quot;: false,
+    &quot;ItemOrder&quot;: 12,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;IsProjectShared&quot;: false,
+    &quot;ProjectShareOwnerName&quot;: null,
+    &quot;ProjectShareOwnerEmail&quot;: null,
+    &quot;IsShareApproved&quot;: false,
+    &quot;IsOwnProject&quot;: true,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1666403312130)/&quot;,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1666403312113)/&quot;,
+    &quot;Deleted&quot;: false,
+    &quot;SyncClientCreationId&quot;: null
+}
+Request method:	PUT
+Request URI:	https://todo.ly/api/projects/4029999.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic dHZ0MjAyMkBnbWFpbC5jb206dDEyMzQ1Njc=
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;Email&quot;:&quot;mariocasas@gmail.com&quot;,&quot;Content&quot;:&quot;CatoUpdated2022&quot;,&quot;FullName&quot;:&quot;Mario Casas&quot;,&quot;Password&quot;:&quot;1234567&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=eg43fcjcmxyqmx5hcac0b5eu; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Sat, 22 Oct 2022 01:48:33 GMT
+Content-Length: 404
+
+{
+    &quot;Id&quot;: 4029999,
+    &quot;Content&quot;: &quot;CatoUpdated2022&quot;,
+    &quot;ItemsCount&quot;: 0,
+    &quot;Icon&quot;: 0,
+    &quot;ItemType&quot;: 2,
+    &quot;ParentId&quot;: null,
+    &quot;Collapsed&quot;: false,
+    &quot;ItemOrder&quot;: 12,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;IsProjectShared&quot;: false,
+    &quot;ProjectShareOwnerName&quot;: null,
+    &quot;ProjectShareOwnerEmail&quot;: null,
+    &quot;IsShareApproved&quot;: false,
+    &quot;IsOwnProject&quot;: true,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1666403313534)/&quot;,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1666403313533)/&quot;,
+    &quot;Deleted&quot;: false,
+    &quot;SyncClientCreationId&quot;: null
+}
+Request method:	GET
+Request URI:	https://todo.ly/api/projects/4029999.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic dHZ0MjAyMkBnbWFpbC5jb206dDEyMzQ1Njc=
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=vkd1j202cxv5rropkedfzepd; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Sat, 22 Oct 2022 01:48:35 GMT
+Content-Length: 404
+
+{
+    &quot;Id&quot;: 4029999,
+    &quot;Content&quot;: &quot;CatoUpdated2022&quot;,
+    &quot;ItemsCount&quot;: 0,
+    &quot;Icon&quot;: 0,
+    &quot;ItemType&quot;: 2,
+    &quot;ParentId&quot;: null,
+    &quot;Collapsed&quot;: false,
+    &quot;ItemOrder&quot;: 12,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;IsProjectShared&quot;: false,
+    &quot;ProjectShareOwnerName&quot;: null,
+    &quot;ProjectShareOwnerEmail&quot;: null,
+    &quot;IsShareApproved&quot;: false,
+    &quot;IsOwnProject&quot;: true,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1666403316014)/&quot;,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1666403313533)/&quot;,
+    &quot;Deleted&quot;: false,
+    &quot;SyncClientCreationId&quot;: null
+}
+Request method:	DELETE
+Request URI:	https://todo.ly/api/projects/4029999.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic dHZ0MjAyMkBnbWFpbC5jb206dDEyMzQ1Njc=
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=4stj5wp0rdw4cogtqrhcwyct; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Sat, 22 Oct 2022 01:48:40 GMT
+Content-Length: 403
+
+{
+    &quot;Id&quot;: 4029999,
+    &quot;Content&quot;: &quot;CatoUpdated2022&quot;,
+    &quot;ItemsCount&quot;: 0,
+    &quot;Icon&quot;: 0,
+    &quot;ItemType&quot;: 2,
+    &quot;ParentId&quot;: null,
+    &quot;Collapsed&quot;: false,
+    &quot;ItemOrder&quot;: 12,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;IsProjectShared&quot;: false,
+    &quot;ProjectShareOwnerName&quot;: null,
+    &quot;ProjectShareOwnerEmail&quot;: null,
+    &quot;IsShareApproved&quot;: false,
+    &quot;IsOwnProject&quot;: true,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1666403320460)/&quot;,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1666403320460)/&quot;,
+    &quot;Deleted&quot;: true,
+    &quot;SyncClientCreationId&quot;: null
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at 21 oct. de 2022 21:48:48</p>
+</div>
+</div>
+</body>
+</html>
